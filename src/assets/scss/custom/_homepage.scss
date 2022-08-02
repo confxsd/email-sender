@@ -1,0 +1,1044 @@
+@import "./functions";
+@import "./variable";
+
+.w-100 {
+  width: 100% !important;
+}
+
+.wrapper {
+  &___link-download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 -10px;
+
+    @media only screen and (max-width: $br-xs) {
+      margin: 0 -5px !important;
+    }
+    a {
+      display: inline-block;
+      width: 200px;
+      padding: 0 10px;
+
+      @media only screen and (max-width: $br-xs) {
+        padding: 0 5px !important;
+        width: 120px !important;
+      }
+    }
+  }
+  &__product-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .bg {
+      width: 110px;
+      height: 110px;
+      object-fit: cover;
+
+      @media only screen and (max-width: $br-sm) {
+        width: 80px !important;
+        height: 80px !important;
+      }
+      @media only screen and (max-width: $br-xx) {
+        display: none !important;
+      }
+    }
+
+    .desc {
+      margin-left: 30px;
+
+      @media only screen and (max-width: $br-xs) {
+        margin-left: 15px !important;
+      }
+
+      @media only screen and (max-width: $br-xx) {
+        margin-left: 0 !important;
+      }
+    }
+
+    &-card {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .bg {
+        width: 110px;
+        height: 110px;
+        object-fit: cover;
+
+        @media only screen and (max-width: $br-sm) {
+          width: 80px !important;
+          height: 80px !important;
+        }
+      }
+
+      .desc {
+        margin-left: 15px;
+
+        @media only screen and (max-width: $br-xs) {
+          margin-left: 15px !important;
+        }
+      }
+    }
+  }
+  &__product {
+    .bg {
+      width: 100% !important;
+      height: 200px;
+      object-fit: cover;
+    }
+    &-card {
+      .bg {
+        width: 100% !important;
+        height: 250px;
+        object-fit: cover;
+      }
+    }
+  }
+  &__box {
+    padding: 1rem 2rem;
+
+    &-2 {
+      padding: 1rem 5rem;
+      @media only screen and (max-width: $br-sm) {
+        padding: 1rem 2rem !important;
+      }
+    }
+    &-3 {
+      padding: 1rem 5rem;
+
+      @media only screen and (max-width: $br-sm) {
+        padding: 1rem 2rem !important;
+      }
+    }
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    &.centered {
+      justify-content: center;
+    }
+
+    > span {
+      margin-left: 1rem;
+    }
+  }
+}
+
+.px {
+  &-30 {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+  &-40 {
+    &.first {
+      padding-left: 20px !important;
+    }
+    &.last {
+      padding-right: 20px !important;
+    }
+  }
+  // &-20 {
+  //   padding-left: 25px !important;
+  //   padding-right: 25px !important;
+
+  //   &.no-sm {
+  //     @media only screen and (max-width: $br-sm) {
+  //       padding-left: 0 !important;
+  //       padding-right: 0 !important;
+  //     }
+  //   }
+  // }
+}
+
+.rounded {
+  &-10 {
+    > table {
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    &-ori {
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  }
+}
+
+.position-relative {
+  position: relative;
+}
+
+.btn {
+  &__link-more-long {
+    td {
+      background-color: color("oldpink") !important;
+      border: 1px solid color("oldpink") !important;
+    }
+    a {
+      padding: 20px 0 !important;
+      background-color: color("oldpink") !important;
+      border: 1px solid color("oldpink") !important;
+    }
+  }
+  &__link-more {
+    td {
+      background-color: color("oldpink") !important;
+      border: 1px solid color("oldpink") !important;
+    }
+    a {
+      padding: 20px 54px !important;
+      background-color: color("oldpink") !important;
+      border: 1px solid color("oldpink") !important;
+    }
+
+    &.blue {
+      td {
+        background-color: color("blue") !important;
+        border: 1px solid color("blue") !important;
+      }
+      a {
+        padding: 20px 38px !important;
+        background-color: color("blue") !important;
+        border: 1px solid color("blue") !important;
+      }
+    }
+  }
+  &__link {
+    td {
+      background-color: color("pink") !important;
+      border: 1px solid color("pink") !important;
+    }
+    a {
+      padding: 20px 38px !important;
+      background-color: color("pink") !important;
+      border: 1px solid color("pink") !important;
+    }
+  }
+}
+
+.d {
+  &-inline-block {
+    display: inline-block;
+  }
+}
+
+.images {
+  &__5 {
+    width: 100% !important;
+    height: 400px;
+    object-fit: cover;
+
+    @media only screen and (max-width: $br-xs) {
+      height: 250px !important;
+    }
+  }
+  &__4 {
+    width: 100% !important;
+    height: 350px;
+    object-fit: cover;
+  }
+  &__3 {
+    width: 100% !important;
+    height: 400px;
+    object-fit: cover;
+    
+    @media only screen and (max-width: $br-xs) {
+      height: 250px !important;
+    }
+  }
+  &__2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  &__1 {
+    width: 100% !important;
+    height: 387px;
+    object-fit: cover;
+  }
+}
+
+.list {
+  &__sosmed {
+    th {
+      padding: 5px !important;
+    }
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+      width: 35px;
+      height: 35px;
+      background-color: color("blue");
+      border-radius: 50%;
+    }
+  }
+}
+
+.text {
+  &__center {
+    text-align: center;
+  }
+  &__right {
+    text-align: right;
+  }
+}
+
+.mb {
+  &-0 {
+    margin-bottom: 0 !important;
+  }
+  &-set5 {
+    margin-bottom: 0.5rem;
+  }
+  &-1 {
+    margin-bottom: 1rem;
+  }
+  &-2 {
+    margin-bottom: 1.5rem;
+  }
+  &-5 {
+    margin-bottom: 2.5rem !important;
+  }
+}
+
+.d {
+  &-sm {
+    &-none {
+      @media only screen and (max-width: $br-sm) {
+        display: none;
+      }
+    }
+  }
+}
+
+// typography
+
+.text {
+  &__163 {
+    &-1024 {
+      @media only screen and (max-width: 1024px) {
+        font-size: 100px !important;
+      }
+    }
+
+    &-md {
+      @media only screen and (max-width: $br-md) {
+        font-size: 90px !important;
+      }
+    }
+
+    &-sm {
+      @media only screen and (max-width: $br-sm) {
+        font-size: 65px !important;
+      }
+    }
+
+    &-xs {
+      @media only screen and (max-width: $br-xs) {
+        font-size: 50px !important;
+      }
+    }
+  }
+
+  &__100 {
+    &-1024 {
+      @media only screen and (max-width: 1024px) {
+        font-size: 80px !important;
+      }
+    }
+
+    &-sm {
+      @media only screen and (max-width: $br-sm) {
+        font-size: 80px !important;
+      }
+    }
+
+    &-mm {
+      @media only screen and (max-width: $br-mm) {
+        font-size: 60px !important;
+      }
+    }
+
+    &-xs {
+      @media only screen and (max-width: $br-xs) {
+        font-size: 50px !important;
+      }
+    }
+
+    &-xxs {
+      @media only screen and (max-width: $br-xxs) {
+        font-size: 45px !important;
+      }
+    }
+  }
+
+  &__200 {
+    &-md {
+      @media only screen and (max-width: $br-md) {
+        font-size: 150px !important;
+      }
+    }
+
+    &-sm {
+      @media only screen and (max-width: $br-sm) {
+        font-size: 125px !important;
+      }
+    }
+
+    &-sm {
+      @media only screen and (max-width: $br-mm) {
+        font-size: 100px !important;
+      }
+    }
+
+    &-xx {
+      @media only screen and (max-width: $br-xx) {
+        font-size: 85px !important;
+      }
+    }
+
+    &-xxs {
+      @media only screen and (max-width: $br-xxs) {
+        font-size: 75px !important;
+      }
+    }
+  }
+
+  &__77 {
+    &-sm {
+      @media only screen and (max-width: $br-sm) {
+        font-size: 50px !important;
+      }
+    }
+  }
+
+  &__80 {
+    &-1024 {
+      @media only screen and (max-width: 1024px) {
+        font-size: 65px !important;
+      }
+    }
+
+    &-md {
+      @media only screen and (max-width: $br-md) {
+        font-size: 65px !important;
+      }
+    }
+
+    &-sm {
+      @media only screen and (max-width: $br-sm) {
+        font-size: 50px !important;
+      }
+    }
+
+    &-xx {
+      @media only screen and (max-width: $br-xx) {
+        font-size: 40px !important;
+      }
+    }
+
+    &-xxs {
+      @media only screen and (max-width: $br-xxs) {
+        font-size: 36px !important;
+      }
+    }
+  }
+
+  &__70 {
+    &-1024 {
+      @media only screen and (max-width: 1024px) {
+        font-size: 60px !important;
+      }
+    }
+
+    &-md {
+      @media only screen and (max-width: $br-md) {
+        font-size: 50px !important;
+      }
+    }
+
+    &-sm {
+      @media only screen and (max-width: $br-sm) {
+        font-size: 50px !important;
+      }
+    }
+
+    &-xs {
+      @media only screen and (max-width: $br-xs) {
+        font-size: 40px !important;
+      }
+    }
+
+    &-xxs {
+      @media only screen and (max-width: $br-xxs) {
+        font-size: 35px !important;
+      }
+    }
+  }
+
+  &__65 {
+    &-1024 {
+      @media only screen and (max-width: 1024px) {
+        font-size: 45px !important;
+      }
+    }
+
+    &-sm {
+      @media only screen and (max-width: $br-sm) {
+        font-size: 35px !important;
+      }
+    }
+  }
+
+  &__60 {
+    &-1024 {
+      @media only screen and (max-width: 1024px) {
+        font-size: 50px !important;
+      }
+    }
+
+    &-xx {
+      @media only screen and (max-width: $br-xx) {
+        font-size: 35px !important;
+      }
+    }
+
+    &-xxs {
+      @media only screen and (max-width: $br-xxs) {
+        font-size: 30px !important;
+      }
+    }
+  }
+
+  &__50 {
+    &-1024 {
+      @media only screen and (max-width: 1024px) {
+        font-size: 40px !important;
+      }
+    }
+
+    &-sm {
+      @media only screen and (max-width: $br-sm) {
+        font-size: 40px !important;
+      }
+    }
+  }
+
+  &__25 {
+    &-sm {
+      @media only screen and (max-width: $br-sm) {
+        font-size: 20px !important;
+      }
+    }
+  }
+
+  &__45 {
+    &-1024 {
+      @media only screen and (max-width: 1024px) {
+        font-size: 35px !important;
+      }
+    }
+
+    &-md {
+      @media only screen and (max-width: $br-md) {
+        font-size: 30px !important;
+      }
+    }
+
+    &-mm {
+      @media only screen and (max-width: $br-mm) {
+        font-size: 24px !important;
+      }
+    }
+  }
+
+  &__40 {
+    &-1024 {
+      @media only screen and (max-width: 1024px) {
+        font-size: 30px !important;
+      }
+    }
+
+    &-md {
+      @media only screen and (max-width: $br-md) {
+        font-size: 30px !important;
+      }
+    }
+
+    &-mm {
+      @media only screen and (max-width: $br-mm) {
+        font-size: 24px !important;
+      }
+    }
+  }
+
+  &__30 {
+    &-1024 {
+      @media only screen and (max-width: 1024px) {
+        font-size: 25px !important;
+      }
+    }
+
+    &-md {
+      @media only screen and (max-width: $br-md) {
+        font-size: 25px !important;
+      }
+    }
+
+    &-sm {
+      @media only screen and (max-width: $br-sm) {
+        font-size: 25px !important;
+      }
+    }
+
+    &-xx {
+      @media only screen and (max-width: $br-xx) {
+        font-size: 20px !important;
+      }
+    }
+  }
+
+  &__32 {
+    &-1024 {
+      @media only screen and (max-width: 1024px) {
+        font-size: 25px !important;
+      }
+    }
+
+    &-xs {
+      @media only screen and (max-width: $br-xs) {
+        font-size: 17px !important;
+      }
+    }
+    &-xxs {
+      @media only screen and (max-width: $br-xs) {
+        font-size: 15px !important;
+      }
+    }
+  }
+
+  &__36 {
+    &-sm {
+      @media only screen and (max-width: $br-sm) {
+        font-size: 28px !important;
+      }
+    }
+  }
+
+  &__28 {
+    &-1024 {
+      @media only screen and (max-width: 1024px) {
+        font-size: 20px !important;
+      }
+    }
+
+    &-sm {
+      @media only screen and (max-width: $br-sm) {
+        font-size: 20px !important;
+      }
+    }
+  }
+
+  &__35 {
+    &-1024 {
+      @media only screen and (max-width: 1024px) {
+        font-size: 28px !important;
+      }
+    }
+
+    &-md {
+      @media only screen and (max-width: $br-md) {
+        font-size: 20px !important;
+      }
+    }
+
+    &-xs {
+      @media only screen and (max-width: $br-xs) {
+        font-size: 20px !important;
+      }
+    }
+  }
+
+  &__38 {
+    &-1024 {
+      @media only screen and (max-width: 1024px) {
+        font-size: 30px !important;
+      }
+    }
+  }
+
+  &__90 {
+    &-1024 {
+      @media only screen and (max-width: 1024px) {
+        font-size: 60px !important;
+      }
+    }
+
+    &-xs {
+      @media only screen and (max-width: $br-xs) {
+        font-size: 40px !important;
+      }
+    }
+  }
+
+  &__33 {
+    &-sm {
+      @media only screen and (max-width: $br-sm) {
+        font-size: 25px !important;
+      }
+    }
+
+    &-xx {
+      @media only screen and (max-width: $br-xx) {
+        font-size: 18px !important;
+      }
+    }
+  }
+
+  &__18 {
+    &-1024 {
+      @media only screen and (max-width: 1024px) {
+        font-size: 16px !important;
+      }
+    }
+
+    &-sm {
+      @media only screen and (max-width: $br-sm) {
+        font-size: 14px !important;
+      }
+    }
+
+    &-xs {
+      @media only screen and (max-width: $br-xs) {
+        font-size: 14px !important;
+      }
+    }
+
+    &-xxs {
+      @media only screen and (max-width: $br-xxs) {
+        font-size: 12px !important;
+      }
+    }
+  }
+
+  &__16 {
+    &-1024 {
+      @media only screen and (max-width: 1024px) {
+        font-size: 14px !important;
+      }
+
+      &-12 {
+        @media only screen and (max-width: 1024px) {
+          font-size: 12px !important;
+        }
+      }
+
+      &-10 {
+        @media only screen and (max-width: 1024px) {
+          font-size: 10px !important;
+        }
+      }
+    }
+
+    &-md {
+      @media only screen and (max-width: $br-md) {
+        font-size: 12px !important;
+      }
+    }
+
+    &-sm {
+      @media only screen and (max-width: $br-sm) {
+        font-size: 12px !important;
+      }
+    }
+
+    &-mm {
+      @media only screen and (max-width: $br-mm) {
+        font-size: 10px !important;
+      }
+
+      &-12 {
+        @media only screen and (max-width: $br-mm) {
+          font-size: 12px !important;
+        }
+      }
+    }
+
+    &-xx {
+      @media only screen and (max-width: $br-xx) {
+        font-size: 10px !important;
+      }
+
+      &-9 {
+        @media only screen and (max-width: $br-xx) {
+          font-size: 9px !important;
+        }
+      }
+    }
+    &-xxs {
+      @media only screen and (max-width: $br-xxs) {
+        font-size: 12px !important;
+      }
+    }
+  }
+
+  &__20 {
+    &-1024 {
+      @media only screen and (max-width: 1024px) {
+        font-size: 16px !important;
+      }
+
+      &-18 {
+        @media only screen and (max-width: 1024px) {
+          font-size: 18px !important;
+        }
+      }
+    }
+
+    &-md {
+      @media only screen and (max-width: $br-md) {
+        font-size: 16px !important;
+      }
+    }
+
+    &-sm {
+      @media only screen and (max-width: $br-sm) {
+        font-size: 14px !important;
+      }
+    }
+    &-xx {
+      @media only screen and (max-width: $br-xx) {
+        font-size: 13px !important;
+      }
+    }
+  }
+
+  &__120 {
+    &-1024 {
+      @media only screen and (max-width: 1024px) {
+        font-size: 100px !important;
+      }
+    }
+
+    &-sm {
+      @media only screen and (max-width: $br-sm) {
+        font-size: 90px !important;
+      }
+    }
+
+    &-sm {
+      @media only screen and (max-width: $br-xx) {
+        font-size: 75px !important;
+      }
+    }
+
+    &-xxs {
+      @media only screen and (max-width: $br-xxs) {
+        font-size: 65px !important;
+      }
+    }
+  }
+
+  &__26 {
+    &-md {
+      @media only screen and (max-width: $br-md) {
+        font-size: 20px !important;
+      }
+    }
+
+    &-sm {
+      @media only screen and (max-width: $br-sm) {
+        font-size: 14px !important;
+      }
+    }
+  }
+
+  &__22 {
+    &-md {
+      @media only screen and (max-width: $br-md) {
+        font-size: 16px !important;
+      }
+    }
+
+    &-sm {
+      @media only screen and (max-width: $br-sm) {
+        font-size: 14px !important;
+      }
+    }
+  }
+
+  &__12 {
+    &-md {
+      @media only screen and (max-width: $br-md) {
+        font-size: 10px !important;
+      }
+    }
+
+    &-sm {
+      @media only screen and (max-width: $br-sm) {
+        font-size: 10px !important;
+      }
+
+      &-8 {
+        @media only screen and (max-width: $br-sm) {
+          font-size: 8px !important;
+        }
+      }
+    }
+
+    &-xs {
+      @media only screen and (max-width: $br-xs) {
+        font-size: 8px !important;
+      }
+
+      &-10 {
+        @media only screen and (max-width: $br-xs) {
+          font-size: 10px !important;
+        }
+      }
+    }
+
+    &-mm {
+      @media only screen and (max-width: $br-mm) {
+        font-size: 8px !important;
+      }
+
+      &-10 {
+        @media only screen and (max-width: $br-mm) {
+          font-size: 10px !important;
+        }
+      }
+    }
+  }
+
+  &__14 {
+    &-1024 {
+      @media only screen and (max-width: 1024px) {
+        font-size: 12px !important;
+      }
+
+      &-10 {
+        @media only screen and (max-width: 1024px) {
+          font-size: 10px !important;
+        }
+      }
+    }
+
+    &-md {
+      @media only screen and (max-width: $br-md) {
+        font-size: 12px !important;
+      }
+    }
+
+    &-sm {
+      @media only screen and (max-width: $br-sm) {
+        font-size: 10px !important;
+      }
+    }
+
+    &-mm {
+      @media only screen and (max-width: $br-mm) {
+        font-size: 9px !important;
+      }
+
+      &-10 {
+        @media only screen and (max-width: $br-mm) {
+          font-size: 10px !important;
+        }
+      }
+    }
+
+    &-xx {
+      @media only screen and (max-width: $br-xx) {
+        font-size: 10px !important;
+      }
+
+      &-8 {
+        @media only screen and (max-width: $br-xx) {
+          font-size: 8px !important;
+        }
+      }
+    }
+  }
+
+  &__27 {
+    &-1024 {
+      @media only screen and (max-width: 1024px) {
+        font-size: 18px !important;
+      }
+    }
+  }
+
+  &__24 {
+    &-1024 {
+      @media only screen and (max-width: 1024px) {
+        font-size: 18px !important;
+      }
+    }
+
+    &-sm {
+      @media only screen and (max-width: $br-sm) {
+        font-size: 16px !important;
+      }
+    }
+  }
+
+  &__25 {
+    &-1024 {
+      @media only screen and (max-width: 1024px) {
+        font-size: 20px !important;
+      }
+    }
+  }
+
+  &__36 {
+    &-1024 {
+      @media only screen and (max-width: 1024px) {
+        font-size: 25px !important;
+      }
+    }
+
+    &-sm {
+      @media only screen and (max-width: $br-sm) {
+        font-size: 30px !important;
+      }
+    }
+    &-xx {
+      @media only screen and (max-width: $br-xx) {
+        font-size: 26px !important;
+      }
+    }
+  }
+
+  &__58 {
+    &-sm {
+      @media only screen and (max-width: $br-sm) {
+        font-size: 45px !important;
+      }
+    }
+  }
+
+  &__48 {
+    &-1024 {
+      @media only screen and (max-width: 1024px) {
+        font-size: 35px !important;
+      }
+    }
+
+    &-md {
+      @media only screen and (max-width: $br-md) {
+        font-size: 40px !important;
+      }
+    }
+
+    &-sm {
+      @media only screen and (max-width: $br-sm) {
+        font-size: 30px !important;
+      }
+    }
+  }
+}

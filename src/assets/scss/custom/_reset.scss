@@ -1,0 +1,25 @@
+// Import Base
+@import "typography";
+// Base Element
+body {
+  font-family: "Poppins", sans-serif !important;
+  color: color("black");
+  font-size: $base-font-size;
+  letter-spacing: 0.03em;
+  line-height: 1.7em;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.lh-2 {
+  line-height: 2 !important;
+}
